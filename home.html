@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://use.typekit.net/fom3elm.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+        <link rel="stylesheet" href="./global.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="resume.html">RESUME</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="#contactme">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>Welcome to my page!</h1>
+                <p> My name is Julian Selnes Thanem</p>
+                <a href="portfolio.html" class="hero-btn">Visit my projects</a>
+            </div>
+        </section>  
+
+    <section class="footer">
+        <a id="contactme"><h4>Contact me</h4></a>
+        <p>You can choose to either contact me through teams,
+            e-mail or by phone. <br>
+            I prefere e-mail.
+        </p>
+        <div class="rowe">
+            <div class="icons">
+                <i class="fa fa-users"></i>
+            </div>
+            <div class="icons">
+                <i class="fa fa-envelope"></i>
+            </div>
+            <div class="icons">
+                <i class="fa fa-phone"></i>
+            </div>
+        </div>
+    </section>
+
+    <!----Javasript for Toggle Menu---->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    </body>
+</html>
